@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		519D06B022B8F8CD003CA2E2 /* JogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D06AF22B8F8CD003CA2E2 /* JogoViewController.swift */; };
 		51E6DEB522B7DBF8005E4AA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E6DEB422B7DBF8005E4AA6 /* AppDelegate.swift */; };
-		51E6DEB722B7DBF8005E4AA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E6DEB622B7DBF8005E4AA6 /* ViewController.swift */; };
 		51E6DEBA22B7DBF8005E4AA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E6DEB822B7DBF8005E4AA6 /* Main.storyboard */; };
 		51E6DEBC22B7DBF9005E4AA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E6DEBB22B7DBF9005E4AA6 /* Assets.xcassets */; };
 		51E6DEBF22B7DBF9005E4AA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E6DEBD22B7DBF9005E4AA6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		519D06AF22B8F8CD003CA2E2 /* JogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogoViewController.swift; sourceTree = "<group>"; };
 		51E6DEB122B7DBF8005E4AA6 /* Vira Dose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vira Dose.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E6DEB422B7DBF8005E4AA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		51E6DEB622B7DBF8005E4AA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		51E6DEB922B7DBF8005E4AA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51E6DEBB22B7DBF9005E4AA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51E6DEBE22B7DBF9005E4AA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				51E6DEB422B7DBF8005E4AA6 /* AppDelegate.swift */,
-				51E6DEB622B7DBF8005E4AA6 /* ViewController.swift */,
+				519D06AF22B8F8CD003CA2E2 /* JogoViewController.swift */,
 				51E6DEB822B7DBF8005E4AA6 /* Main.storyboard */,
 				51E6DEBB22B7DBF9005E4AA6 /* Assets.xcassets */,
 				51E6DEBD22B7DBF9005E4AA6 /* LaunchScreen.storyboard */,
@@ -135,8 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51E6DEB722B7DBF8005E4AA6 /* ViewController.swift in Sources */,
 				51E6DEB522B7DBF8005E4AA6 /* AppDelegate.swift in Sources */,
+				519D06B022B8F8CD003CA2E2 /* JogoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
