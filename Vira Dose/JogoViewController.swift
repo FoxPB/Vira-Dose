@@ -8,70 +8,12 @@
 
 import UIKit
 
-class JogoViewController: UIViewController {
+class JogoViewController: UIViewController, UITextFieldDelegate {
     
     var numeroEscolhido: Int = 0
-    
-    @IBOutlet weak var bt00: UIButton!
-    @IBOutlet weak var bt01: UIButton!
-    @IBOutlet weak var bt02: UIButton!
-    @IBOutlet weak var bt03: UIButton!
-    @IBOutlet weak var bt04: UIButton!
-    @IBOutlet weak var bt05: UIButton!
-    @IBOutlet weak var bt06: UIButton!
-    @IBOutlet weak var bt07: UIButton!
-    @IBOutlet weak var bt08: UIButton!
-    @IBOutlet weak var bt09: UIButton!
-    @IBOutlet weak var bt10: UIButton!
-    @IBOutlet weak var bt11: UIButton!
-    @IBOutlet weak var bt12: UIButton!
-    @IBOutlet weak var bt13: UIButton!
-    @IBOutlet weak var bt14: UIButton!
-    @IBOutlet weak var bt15: UIButton!
-    @IBOutlet weak var bt16: UIButton!
-    @IBOutlet weak var bt17: UIButton!
-    @IBOutlet weak var bt18: UIButton!
-    @IBOutlet weak var bt19: UIButton!
-    @IBOutlet weak var bt20: UIButton!
-    @IBOutlet weak var bt21: UIButton!
-    @IBOutlet weak var bt22: UIButton!
-    @IBOutlet weak var bt23: UIButton!
-    @IBOutlet weak var bt24: UIButton!
-    @IBOutlet weak var bt25: UIButton!
-    @IBOutlet weak var bt26: UIButton!
-    @IBOutlet weak var bt27: UIButton!
-    @IBOutlet weak var bt28: UIButton!
-    @IBOutlet weak var bt29: UIButton!
-    @IBOutlet weak var bt30: UIButton!
-    @IBOutlet weak var bt31: UIButton!
-    @IBOutlet weak var bt32: UIButton!
-    @IBOutlet weak var bt33: UIButton!
-    @IBOutlet weak var bt34: UIButton!
-    @IBOutlet weak var bt35: UIButton!
-    @IBOutlet weak var bt36: UIButton!
-    @IBOutlet weak var bt37: UIButton!
-    @IBOutlet weak var bt38: UIButton!
-    @IBOutlet weak var bt39: UIButton!
-    @IBOutlet weak var bt40: UIButton!
-    @IBOutlet weak var bt41: UIButton!
-    @IBOutlet weak var bt42: UIButton!
-    @IBOutlet weak var bt43: UIButton!
-    @IBOutlet weak var bt44: UIButton!
-    @IBOutlet weak var bt45: UIButton!
-    @IBOutlet weak var bt46: UIButton!
-    @IBOutlet weak var bt47: UIButton!
-    @IBOutlet weak var bt48: UIButton!
-    @IBOutlet weak var bt49: UIButton!
-    @IBOutlet weak var bt50: UIButton!
-    @IBOutlet weak var bt51: UIButton!
-    @IBOutlet weak var bt52: UIButton!
-    @IBOutlet weak var bt53: UIButton!
-    @IBOutlet weak var bt54: UIButton!
-    @IBOutlet weak var bt55: UIButton!
-    @IBOutlet weak var bt56: UIButton!
-    @IBOutlet weak var bt57: UIButton!
-    @IBOutlet weak var bt58: UIButton!
-    @IBOutlet weak var bt59: UIButton!
+    var numeroBotaoPrecionado: Int!
+    @IBOutlet var botoes: [UIButton]!
+
     @IBOutlet weak var btComecar: UIButton!
     
     @IBAction func btAcao00(_ sender: Any) {
@@ -171,7 +113,7 @@ class JogoViewController: UIViewController {
     }
     
     @IBAction func btAcao24(_ sender: Any) {
-        self.numeroCerto(numero: 24)
+       self.numeroCerto(numero: 24)
     }
     
     @IBAction func btAcao25(_ sender: Any) {
@@ -315,20 +257,72 @@ class JogoViewController: UIViewController {
     }
     
     @IBAction func btAcaoComecar(_ sender: Any) {
-        sorteandoNumero()
+        
+        let alerta = UIAlertController(title: "Numero SECRETO!!!", message: "Escolher um numero de 0 a 59 ou sortear aleotoriamente?", preferredStyle: .alert)
+        
+        let escolher = UIAlertAction(title: "Escolher", style: .default) { (alerta) in
+            
+            
+            let alertaEscolher = UIAlertController(title: "Escolha um numero", message: "De 0 a 59", preferredStyle: .alert)
+            
+            alertaEscolher.addTextField { (textField) -> Void in
+                let searchTextField = textField
+                searchTextField.delegate = self //REQUIRED
+                searchTextField.placeholder = "Digite um numero de 0 a 59"
+                searchTextField.keyboardType = .numberPad
+             
+                if let numero: Int = Int(searchTextField.text!) {
+
+                    if numero >= 0 && numero <= 59 {
+                        
+                        self.numeroEscolhido = numero
+                        
+                        for i in 0..<self.botoes.count{
+                            self.botoes[i].isEnabled = true
+                            self.botoes[i].backgroundColor = UIColor(displayP3Red: 0.664, green: 0.664, blue: 0.664, alpha: 1)
+                        }
+                        
+                    }else{
+                        print()
+                    }
+                    
+                }
+                
+            }
+            
+            let ok = UIAlertAction(title: "ok", style: .default, handler: nil)
+            
+            alertaEscolher.addAction(ok)
+            
+            self.present(alertaEscolher, animated: true, completion: nil)
+            
+            
+        }
+
+        let sortear = UIAlertAction(title: "Sortear", style: .default) { (alerta) in
+            self.sorteandoNumero()
+        }
+        
+        alerta.addAction(escolher)
+        alerta.addAction(sortear)
+        
+        self.present(alerta, animated: true, completion: nil)
+        
         self.desabilitarBotaoComecar()
     }
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    
-    }
-    
-    func numeroCerto(numero: Int){
+    func numeroCerto(numero: Int) {
         
         if self.numeroEscolhido == numero {
+            
+            //Desabilita todos os botoes pois o numero foi acertado
+            for i in 0..<botoes.count{
+                self.botoes[i].isEnabled = false
+                self.botoes[i].backgroundColor = UIColor(displayP3Red: 0.080, green: 0.080, blue: 0.080, alpha: 1)
+            }
+            
+            //pinta o botao que foi acertado de vermelho
+            self.botoes[numero].backgroundColor = UIColor(displayP3Red: 1.000, green: 0.000, blue: 0.000, alpha: 1)
             
             let alerta = UIAlertController(title: "Acertou: \(numeroEscolhido)", message: "Vire a dose!", preferredStyle: .alert)
             
@@ -344,9 +338,17 @@ class JogoViewController: UIViewController {
             
             if self.numeroEscolhido > numero {
                 
-                
+                for i in (0..<(numero+1)){
+                    self.botoes[i].isEnabled = false
+                    self.botoes[i].backgroundColor = UIColor(displayP3Red: 0.080, green: 0.080, blue: 0.080, alpha: 1)
+                }
                 
             }else if self.numeroEscolhido < numero {
+                
+                for i in numero..<60{
+                    self.botoes[i].isEnabled = false
+                    self.botoes[i].backgroundColor = UIColor(displayP3Red: 0.080, green: 0.080, blue: 0.080, alpha: 1)
+                }
                 
             }
            
@@ -357,11 +359,12 @@ class JogoViewController: UIViewController {
     func sorteandoNumero(){
         let numeroAleatorio: Int = Int(arc4random_uniform(60))
         self.numeroEscolhido = numeroAleatorio
-        print(numeroEscolhido)
-    }
-
-    func alerta(){
         
+        for i in 0..<self.botoes.count{
+            self.botoes[i].isEnabled = true
+            self.botoes[i].backgroundColor = UIColor(displayP3Red: 0.664, green: 0.664, blue: 0.664, alpha: 1)
+        }
+    
     }
 
     func desabilitarBotaoComecar(){
@@ -375,4 +378,25 @@ class JogoViewController: UIViewController {
         self.btComecar.isEnabled = true
         self.btComecar.backgroundColor = UIColor(displayP3Red: 0.664, green: 0.664, blue: 0.664, alpha: 1)
     }
+    
+    func desabilitarBotao(buttons: [UIButton]){
+        
+        for (_, button) in buttons.enumerated() {
+            button.isEnabled = false
+            button.backgroundColor = UIColor(displayP3Red: 0.080, green: 0.080, blue: 0.080, alpha: 1)
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //Desabilita todos os botoes antes de clicar em iniciar
+        for i in 0..<botoes.count{
+            self.botoes[i].isEnabled = false
+            self.botoes[i].backgroundColor = UIColor(displayP3Red: 0.080, green: 0.080, blue: 0.080, alpha: 1)
+        }
+        
+    }
+    
+    
 }

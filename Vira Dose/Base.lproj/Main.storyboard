@@ -936,67 +936,67 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="bt00" destination="hcM-6J-epw" id="RGL-t1-KOW"/>
-                        <outlet property="bt01" destination="aes-Y1-AjK" id="LKU-og-ct9"/>
-                        <outlet property="bt02" destination="2t0-Ta-E9H" id="fo1-N4-QLI"/>
-                        <outlet property="bt03" destination="E2f-fS-xj1" id="bbp-g9-L8d"/>
-                        <outlet property="bt04" destination="Kwl-fK-teg" id="lyO-sA-yAE"/>
-                        <outlet property="bt05" destination="0EP-tw-wZt" id="bFS-Cp-TPv"/>
-                        <outlet property="bt06" destination="SGD-HI-GIj" id="CbJ-wR-IMA"/>
-                        <outlet property="bt07" destination="Hsk-Gy-PcA" id="TSC-Nt-u0x"/>
-                        <outlet property="bt08" destination="ew0-IY-1uU" id="bVc-pf-F9T"/>
-                        <outlet property="bt09" destination="GqF-gb-pW1" id="mXL-yZ-f6n"/>
-                        <outlet property="bt10" destination="ynL-Pn-0nG" id="OVK-tU-NSN"/>
-                        <outlet property="bt11" destination="VDB-NE-jiK" id="kYR-Ac-atP"/>
-                        <outlet property="bt12" destination="CbA-lg-Ogd" id="2af-H9-owG"/>
-                        <outlet property="bt13" destination="fMb-Ji-fWD" id="mrM-N2-Fyg"/>
-                        <outlet property="bt14" destination="6KI-42-26D" id="Ee1-D6-cc1"/>
-                        <outlet property="bt15" destination="cl1-a1-NHF" id="hIn-JL-npv"/>
-                        <outlet property="bt16" destination="EXb-hG-Ey9" id="l71-sh-INQ"/>
-                        <outlet property="bt17" destination="94t-mO-kFq" id="cOh-IV-xe7"/>
-                        <outlet property="bt18" destination="UCb-yN-23N" id="3ux-4D-vLB"/>
-                        <outlet property="bt19" destination="lHq-Rm-DJr" id="yYU-QL-SLG"/>
-                        <outlet property="bt20" destination="Gw7-zS-E5G" id="VDO-ib-m7c"/>
-                        <outlet property="bt21" destination="I7d-hG-Huw" id="XT2-dI-eLd"/>
-                        <outlet property="bt22" destination="GKG-ry-45B" id="daD-0C-WK0"/>
-                        <outlet property="bt23" destination="r29-j5-Y2S" id="i0L-aD-q6S"/>
-                        <outlet property="bt24" destination="mqo-O5-QJS" id="bkw-Dr-BRt"/>
-                        <outlet property="bt25" destination="RcY-lo-xXY" id="OcP-tr-bQr"/>
-                        <outlet property="bt26" destination="b4g-LU-Ttr" id="wUk-RA-mhc"/>
-                        <outlet property="bt27" destination="cgF-oW-O3l" id="QJJ-vL-TP0"/>
-                        <outlet property="bt28" destination="ndA-yf-9dg" id="2Ml-Ny-lgQ"/>
-                        <outlet property="bt29" destination="H18-hV-QaL" id="9LV-5r-aJV"/>
-                        <outlet property="bt30" destination="kGn-D2-HHa" id="uCd-Q4-GWU"/>
-                        <outlet property="bt31" destination="7vp-po-5tJ" id="5qp-Fi-szK"/>
-                        <outlet property="bt32" destination="uwA-Kh-Dfy" id="gpo-67-NvY"/>
-                        <outlet property="bt33" destination="f9a-9p-cpB" id="5fo-Ff-UxX"/>
-                        <outlet property="bt34" destination="veZ-Gm-cPv" id="OTv-NK-OBo"/>
-                        <outlet property="bt35" destination="Vqc-UL-fhS" id="bgG-l4-I0O"/>
-                        <outlet property="bt36" destination="Akq-gj-y4g" id="ce5-8L-9jm"/>
-                        <outlet property="bt37" destination="f2w-me-qJD" id="PrI-CA-Pwn"/>
-                        <outlet property="bt38" destination="Kkq-5K-uZM" id="Qrn-AJ-sCo"/>
-                        <outlet property="bt39" destination="yUw-AB-jkK" id="oTG-sN-IFv"/>
-                        <outlet property="bt40" destination="7Jg-bK-hiT" id="SXh-zr-ZFE"/>
-                        <outlet property="bt41" destination="j2q-VE-F3F" id="8nK-IE-Sxc"/>
-                        <outlet property="bt42" destination="Xnx-Ym-y5y" id="GVf-CF-oSV"/>
-                        <outlet property="bt43" destination="vVn-ZH-Pi7" id="i6A-ox-9ro"/>
-                        <outlet property="bt44" destination="bZn-WV-W2q" id="8kE-Pk-cUK"/>
-                        <outlet property="bt45" destination="PAF-Px-SJY" id="Lc7-dF-DO2"/>
-                        <outlet property="bt46" destination="ODM-bQ-On1" id="fme-cJ-tuM"/>
-                        <outlet property="bt47" destination="iVY-xQ-328" id="Swr-qM-Y8Q"/>
-                        <outlet property="bt48" destination="PRq-Nv-j3l" id="1ek-WZ-ghn"/>
-                        <outlet property="bt49" destination="qgl-5F-1DB" id="YI9-VZ-SjZ"/>
-                        <outlet property="bt50" destination="X22-P0-w7r" id="NRT-Uj-QpZ"/>
-                        <outlet property="bt51" destination="M4J-T4-dgv" id="cmT-a2-eCw"/>
-                        <outlet property="bt52" destination="SaG-XD-Art" id="eZB-iA-LJA"/>
-                        <outlet property="bt53" destination="7Ns-Gu-9o6" id="XLV-G5-ECD"/>
-                        <outlet property="bt54" destination="gfA-Sc-00t" id="LUZ-ka-oLV"/>
-                        <outlet property="bt55" destination="t77-n8-VCs" id="1xf-PQ-YGL"/>
-                        <outlet property="bt56" destination="BWu-Yj-pnC" id="dLe-kk-ARq"/>
-                        <outlet property="bt57" destination="C5h-bh-yZc" id="7UZ-NO-CfB"/>
-                        <outlet property="bt58" destination="ceO-pD-DnB" id="V8R-pe-ar8"/>
-                        <outlet property="bt59" destination="06X-TA-1UO" id="Af3-vk-6bU"/>
                         <outlet property="btComecar" destination="CCF-Qv-OMn" id="fzc-UP-Zek"/>
+                        <outletCollection property="botoes" destination="hcM-6J-epw" collectionClass="NSMutableArray" id="Lwb-7A-q1P"/>
+                        <outletCollection property="botoes" destination="aes-Y1-AjK" collectionClass="NSMutableArray" id="o7B-f4-3gr"/>
+                        <outletCollection property="botoes" destination="2t0-Ta-E9H" collectionClass="NSMutableArray" id="xv1-tP-8lA"/>
+                        <outletCollection property="botoes" destination="E2f-fS-xj1" collectionClass="NSMutableArray" id="TeO-w6-CUC"/>
+                        <outletCollection property="botoes" destination="Kwl-fK-teg" collectionClass="NSMutableArray" id="Svs-zh-fqm"/>
+                        <outletCollection property="botoes" destination="0EP-tw-wZt" collectionClass="NSMutableArray" id="qVy-Hh-ZOP"/>
+                        <outletCollection property="botoes" destination="SGD-HI-GIj" collectionClass="NSMutableArray" id="MtJ-2s-nBX"/>
+                        <outletCollection property="botoes" destination="Hsk-Gy-PcA" collectionClass="NSMutableArray" id="DgI-Vf-Hy7"/>
+                        <outletCollection property="botoes" destination="ew0-IY-1uU" collectionClass="NSMutableArray" id="oe7-uc-1KU"/>
+                        <outletCollection property="botoes" destination="GqF-gb-pW1" collectionClass="NSMutableArray" id="6er-b8-HRl"/>
+                        <outletCollection property="botoes" destination="ynL-Pn-0nG" collectionClass="NSMutableArray" id="D98-jF-I0k"/>
+                        <outletCollection property="botoes" destination="VDB-NE-jiK" collectionClass="NSMutableArray" id="dma-I2-Gff"/>
+                        <outletCollection property="botoes" destination="CbA-lg-Ogd" collectionClass="NSMutableArray" id="Eem-mQ-SaJ"/>
+                        <outletCollection property="botoes" destination="fMb-Ji-fWD" collectionClass="NSMutableArray" id="1ec-OJ-l56"/>
+                        <outletCollection property="botoes" destination="6KI-42-26D" collectionClass="NSMutableArray" id="2mh-kj-cnJ"/>
+                        <outletCollection property="botoes" destination="cl1-a1-NHF" collectionClass="NSMutableArray" id="jD8-ZU-eug"/>
+                        <outletCollection property="botoes" destination="EXb-hG-Ey9" collectionClass="NSMutableArray" id="WSE-u4-86l"/>
+                        <outletCollection property="botoes" destination="94t-mO-kFq" collectionClass="NSMutableArray" id="GyD-K8-Dk6"/>
+                        <outletCollection property="botoes" destination="UCb-yN-23N" collectionClass="NSMutableArray" id="Or2-I2-fsg"/>
+                        <outletCollection property="botoes" destination="lHq-Rm-DJr" collectionClass="NSMutableArray" id="bOr-YI-tLR"/>
+                        <outletCollection property="botoes" destination="Gw7-zS-E5G" collectionClass="NSMutableArray" id="iUz-e8-AS9"/>
+                        <outletCollection property="botoes" destination="I7d-hG-Huw" collectionClass="NSMutableArray" id="1X8-eb-q5G"/>
+                        <outletCollection property="botoes" destination="GKG-ry-45B" collectionClass="NSMutableArray" id="0Zp-TI-muM"/>
+                        <outletCollection property="botoes" destination="r29-j5-Y2S" collectionClass="NSMutableArray" id="55t-fZ-V7t"/>
+                        <outletCollection property="botoes" destination="mqo-O5-QJS" collectionClass="NSMutableArray" id="5oS-Ux-oLx"/>
+                        <outletCollection property="botoes" destination="RcY-lo-xXY" collectionClass="NSMutableArray" id="8vk-x7-HKo"/>
+                        <outletCollection property="botoes" destination="b4g-LU-Ttr" collectionClass="NSMutableArray" id="oBQ-hf-FTy"/>
+                        <outletCollection property="botoes" destination="cgF-oW-O3l" collectionClass="NSMutableArray" id="bMl-os-GpY"/>
+                        <outletCollection property="botoes" destination="ndA-yf-9dg" collectionClass="NSMutableArray" id="k4U-Cx-kFw"/>
+                        <outletCollection property="botoes" destination="H18-hV-QaL" collectionClass="NSMutableArray" id="h79-QA-fiO"/>
+                        <outletCollection property="botoes" destination="kGn-D2-HHa" collectionClass="NSMutableArray" id="bCI-Rb-7Iz"/>
+                        <outletCollection property="botoes" destination="7vp-po-5tJ" collectionClass="NSMutableArray" id="f0z-VF-aVo"/>
+                        <outletCollection property="botoes" destination="uwA-Kh-Dfy" collectionClass="NSMutableArray" id="I0v-pN-Ikb"/>
+                        <outletCollection property="botoes" destination="f9a-9p-cpB" collectionClass="NSMutableArray" id="7Ta-7K-FOJ"/>
+                        <outletCollection property="botoes" destination="veZ-Gm-cPv" collectionClass="NSMutableArray" id="7hd-Np-MZC"/>
+                        <outletCollection property="botoes" destination="Vqc-UL-fhS" collectionClass="NSMutableArray" id="Dsd-Tf-qri"/>
+                        <outletCollection property="botoes" destination="Akq-gj-y4g" collectionClass="NSMutableArray" id="88d-QT-TPS"/>
+                        <outletCollection property="botoes" destination="f2w-me-qJD" collectionClass="NSMutableArray" id="9qh-JY-W40"/>
+                        <outletCollection property="botoes" destination="Kkq-5K-uZM" collectionClass="NSMutableArray" id="Lgq-lV-1MO"/>
+                        <outletCollection property="botoes" destination="yUw-AB-jkK" collectionClass="NSMutableArray" id="5FK-hI-Nf3"/>
+                        <outletCollection property="botoes" destination="7Jg-bK-hiT" collectionClass="NSMutableArray" id="RQg-Il-ojX"/>
+                        <outletCollection property="botoes" destination="j2q-VE-F3F" collectionClass="NSMutableArray" id="eL8-gl-EUF"/>
+                        <outletCollection property="botoes" destination="Xnx-Ym-y5y" collectionClass="NSMutableArray" id="u4Y-HH-XOY"/>
+                        <outletCollection property="botoes" destination="vVn-ZH-Pi7" collectionClass="NSMutableArray" id="adZ-i8-fqf"/>
+                        <outletCollection property="botoes" destination="bZn-WV-W2q" collectionClass="NSMutableArray" id="Sva-ph-8LH"/>
+                        <outletCollection property="botoes" destination="PAF-Px-SJY" collectionClass="NSMutableArray" id="qhY-kt-n5G"/>
+                        <outletCollection property="botoes" destination="ODM-bQ-On1" collectionClass="NSMutableArray" id="Ww6-O4-oWM"/>
+                        <outletCollection property="botoes" destination="iVY-xQ-328" collectionClass="NSMutableArray" id="ox1-tJ-lpT"/>
+                        <outletCollection property="botoes" destination="PRq-Nv-j3l" collectionClass="NSMutableArray" id="L0K-r1-uba"/>
+                        <outletCollection property="botoes" destination="qgl-5F-1DB" collectionClass="NSMutableArray" id="nRY-Pw-cO1"/>
+                        <outletCollection property="botoes" destination="X22-P0-w7r" collectionClass="NSMutableArray" id="jZo-DY-ti9"/>
+                        <outletCollection property="botoes" destination="M4J-T4-dgv" collectionClass="NSMutableArray" id="eJY-Na-Uf6"/>
+                        <outletCollection property="botoes" destination="SaG-XD-Art" collectionClass="NSMutableArray" id="UIL-10-8di"/>
+                        <outletCollection property="botoes" destination="7Ns-Gu-9o6" collectionClass="NSMutableArray" id="vW0-tH-5GT"/>
+                        <outletCollection property="botoes" destination="gfA-Sc-00t" collectionClass="NSMutableArray" id="fwg-hd-cdE"/>
+                        <outletCollection property="botoes" destination="t77-n8-VCs" collectionClass="NSMutableArray" id="jFi-Jw-h55"/>
+                        <outletCollection property="botoes" destination="BWu-Yj-pnC" collectionClass="NSMutableArray" id="NAL-qe-CYx"/>
+                        <outletCollection property="botoes" destination="C5h-bh-yZc" collectionClass="NSMutableArray" id="gyD-gR-gFg"/>
+                        <outletCollection property="botoes" destination="ceO-pD-DnB" collectionClass="NSMutableArray" id="HUx-Ai-Guj"/>
+                        <outletCollection property="botoes" destination="06X-TA-1UO" collectionClass="NSMutableArray" id="XId-sS-Cmf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
