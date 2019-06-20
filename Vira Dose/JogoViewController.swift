@@ -12,6 +12,7 @@ class JogoViewController: UIViewController, UITextFieldDelegate {
     
     var numeroEscolhido: Int = 0
     var numeroBotaoPrecionado: Int!
+    var searchTextField: UITextField!
     @IBOutlet var botoes: [UIButton]!
 
     @IBOutlet weak var btComecar: UIButton!
@@ -266,39 +267,51 @@ class JogoViewController: UIViewController, UITextFieldDelegate {
             let alertaEscolher = UIAlertController(title: "Escolha um numero", message: "De 0 a 59", preferredStyle: .alert)
             
             alertaEscolher.addTextField { (textField) -> Void in
-                let searchTextField = textField
-                searchTextField.delegate = self //REQUIRED
-                searchTextField.placeholder = "Digite um numero de 0 a 59"
-                searchTextField.keyboardType = .numberPad
-             
-                if let numero: Int = Int(searchTextField.text!) {
-
-                    if numero >= 0 && numero <= 59 {
-                        
-                        self.numeroEscolhido = numero
-                        
-                        for i in 0..<self.botoes.count{
-                            self.botoes[i].isEnabled = true
-                            self.botoes[i].backgroundColor = UIColor(displayP3Red: 0.664, green: 0.664, blue: 0.664, alpha: 1)
+                self.searchTextField = textField
+                self.searchTextField.delegate = self //REQUIRED
+                self.searchTextField.placeholder = "Digite um numero de 0 a 59"
+                self.searchTextField.keyboardType = .numberPad
+                
+            }
+            
+            let ok = UIAlertAction(title: "ok", style: .default, handler: { (alerta) in
+                
+                
+                if self.searchTextField.text != ""{
+                   
+                    if let textoR = self.searchTextField.text {
+                       
+                        print(textoR)
+                        if let numeroR = Int(textoR) {
+                            
+                            print(numeroR)
+                            if numeroR >= 0 && numeroR <= 59 {
+                                
+                                self.numeroEscolhido = numeroR
+                                
+                                for i in 0..<self.botoes.count{
+                                    self.botoes[i].isEnabled = true
+                                    self.botoes[i].backgroundColor = UIColor(displayP3Red: 0.664, green: 0.664, blue: 0.664, alpha: 1)
+                                }
+                                
+                            }else{//se o numero digitado nao for entre 0 e 59
+                               self.present(alertaEscolher, animated: true, completion: nil)
+                            }
+                            
                         }
                         
-                    }else{
-                        print()
                     }
                     
                 }
                 
-            }
-            
-            let ok = UIAlertAction(title: "ok", style: .default, handler: nil)
+            })
             
             alertaEscolher.addAction(ok)
             
             self.present(alertaEscolher, animated: true, completion: nil)
             
-            
         }
-
+        
         let sortear = UIAlertAction(title: "Sortear", style: .default) { (alerta) in
             self.sorteandoNumero()
         }
