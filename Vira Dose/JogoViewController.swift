@@ -14,7 +14,7 @@ class JogoViewController: UIViewController, UITextFieldDelegate {
     var numeroBotaoPrecionado: Int!
     var searchTextField: UITextField!
     @IBOutlet var botoes: [UIButton]!
-
+    
     @IBOutlet weak var btComecar: UIButton!
     
     @IBAction func btAcao00(_ sender: Any) {
@@ -257,9 +257,10 @@ class JogoViewController: UIViewController, UITextFieldDelegate {
          self.numeroCerto(numero: 59)
     }
     
+   
     @IBAction func btAcaoComecar(_ sender: Any) {
         
-        let alerta = UIAlertController(title: "Numero SECRETO!!!", message: "Escolher um numero de 0 a 59 ou sortear aleotoriamente?", preferredStyle: .alert)
+        let alerta = UIAlertController(title: "Numero SECRETO!!!", message: "Escolher um numero de 0 a 59 ou sortear aleatoriamente?", preferredStyle: .alert)
         
         let escolher = UIAlertAction(title: "Escolher", style: .default) { (alerta) in
             
@@ -278,13 +279,11 @@ class JogoViewController: UIViewController, UITextFieldDelegate {
                 
                 
                 if self.searchTextField.text != ""{
-                   
+                    
                     if let textoR = self.searchTextField.text {
-                       
-                        print(textoR)
+                        
                         if let numeroR = Int(textoR) {
                             
-                            print(numeroR)
                             if numeroR >= 0 && numeroR <= 59 {
                                 
                                 self.numeroEscolhido = numeroR
@@ -295,9 +294,11 @@ class JogoViewController: UIViewController, UITextFieldDelegate {
                                 }
                                 
                             }else{//se o numero digitado nao for entre 0 e 59
-                               self.present(alertaEscolher, animated: true, completion: nil)
+                                self.present(alertaEscolher, animated: true, completion: nil)
                             }
                             
+                        }else{//Se por algum motivo mirabolante o usuario conseguir digitar Strings
+                            self.present(alertaEscolher, animated: true, completion: nil)
                         }
                         
                     }
@@ -335,11 +336,11 @@ class JogoViewController: UIViewController, UITextFieldDelegate {
             }
             
             //pinta o botao que foi acertado de vermelho
-            self.botoes[numero].backgroundColor = UIColor(displayP3Red: 1.000, green: 0.000, blue: 0.000, alpha: 1)
+            self.botoes[self.numeroEscolhido].backgroundColor = UIColor(displayP3Red: 1.000, green: 0.000, blue: 0.000, alpha: 1)
             
             let alerta = UIAlertController(title: "Acertou: \(numeroEscolhido)", message: "Vire a dose!", preferredStyle: .alert)
             
-            let ok = UIAlertAction(title: "Virei", style: .default, handler: nil)
+            let ok = UIAlertAction(title: "Virei!!!", style: .default, handler: nil)
             
             alerta.addAction(ok)
             
